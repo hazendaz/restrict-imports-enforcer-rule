@@ -351,4 +351,16 @@
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>jdk21on</id>
+            <activation>
+                <jdk>[21,)</jdk>
+            </activation>
+            <properties>
+                <spotless.check.skip>true</spotless.check.skip>
+            </properties>
+        </profile>
+    </profiles>
 </project>
