@@ -315,6 +315,7 @@
                             <parallelThreads>2C</parallelThreads>
                             <cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
                             <mavenOpts>${argLine}</mavenOpts>
+                            <streamLogsOnFailures>true</streamLogsOnFailures>
                         </configuration>
                     </execution>
                 </executions>
