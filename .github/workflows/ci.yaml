@@ -25,4 +25,4 @@ jobs:
       - name: Load Maven ${{ matrix.maven }}
         run: ./mvnw -B -V org.apache.maven.plugins:maven-wrapper-plugin:3.2.0:wrapper -Dmaven=${{ matrix.maven }} --no-transfer-progress
       - name: Verify with Maven
-        run: ./mvnw verify -B -V --no-transfer-progress
+        run: ./mvnw verify -B -V
